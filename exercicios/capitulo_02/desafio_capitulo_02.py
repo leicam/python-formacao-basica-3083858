@@ -69,3 +69,34 @@ print("conjunto: ", {"Batman", "Robin", "Asa Noturna", "Batman"})
 dicionario = {"animais": "cachorro, gato, pombo", "carros" : "porsche 911, bmw M3, ferrari F40"}
 print("dicionario", dicionario)
 print("dicionario -> carros: ", dicionario["carros"])
+
+#exercicio funcoes
+
+def calcularQuadrado(valor) :
+    return valor ** 2
+
+print("Quadrado de 3 = ", calcularQuadrado(3))
+print("Quadrado de 4 = ", calcularQuadrado(4))
+
+def somar(valorUm, valorDois) : 
+    return valorUm + valorDois
+
+print("Somar 214 + 921 = ", somar(214, 921))
+print("Somar 129 + 542 = ", somar(129, 542))
+
+#exercicio classe
+
+class Aluno :
+    def __init__(self, ra = "", nome = "", telefone = "") : 
+        self.ra = ra
+        self.nome = nome
+        self.telefone = telefone
+
+    def toString(self) :
+        return self.ra + " " + self.nome + " " + self.telefone
+    
+juliano = Aluno("08009110", "Juliano Maciel", "(44)99999-9999")
+sabrina = Aluno("99999999", "Sabrina Versuti", "(44)88888-8888")
+
+print(juliano.toString())
+print(sabrina.toString())
